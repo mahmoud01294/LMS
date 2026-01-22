@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Tiny Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="about-page">
+    <!-- Header -->
+    <header class="Header" id="Header">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img class="logo-img" src="img/logo.jpg" alt="logo" />
+            <span>Ta3alM</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Accounts</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Instructor Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="instructor.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="create-course.html"
+                          >Create Course</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-courses.html"
+                          >My Courses</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Student Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="student.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-enrollments.html"
+                          >My Enrollments</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="sign-in" id="signIn">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <a href="#">Sign in</a>
+            </div>
+
+            <div class="user" id="user">
+              <div class="user-info">
+                <img
+                  src="img/avatar-1-D6Lye4v7.jpg"
+                  alt="avatar"
+                  class="user-avatar"
+                />
+                <p class="user-name">Ahmed Mohamed</p>
+                <i class="bi bi-caret-down-fill dropdown-icon"></i>
+              </div>
+              <div class="user-dropdown">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-student"></section>
+
+    <!-- Main Content -->
+    <section class="pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-lg-3">
+            <div class="cardUser p-3 pt-4">
+              <div class="card-img m-4">
+                <img src="img/avatar-1-D6Lye4v7.jpg" alt="User Avatar" />
+                <span class="badge">pro</span>
+              </div>
+              <div class="title-img mb-4">
+                <h4 class="m-0">Ahmed Mohamed</h4>
+                <span class="text-mid text-muted-2"
+                  >Platinum - Exp. 15 Dec 2025</span
+                >
+              </div>
+              <div class="count-courses mb-4">
+                <div class="left-count">
+                  <h3 class="mb-3">12</h3>
+                  <p>Done Courses</p>
+                </div>
+                <div class="right-count">
+                  <h3 class="mb-3">165</h3>
+                  <p>Done Lessons</p>
+                </div>
+              </div>
+              <div class="d-navigation">
+                <ul id="side-menu">
+                  <li>
+                    <a href="./student.html"
+                      ><i class="bi bi-ui-radios-grid me-2"></i>Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="active" href="AllCourses.html"
+                      ><i class="bi bi-play-circle me-2"></i>All Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="student-subscription.html"
+                      ><i class="bi bi-basket2 me-2"></i>My Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-course-resume.html"
+                      ><i class="bi bi-patch-plus me-2"></i>Course Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-wishlist.html"><i class="bi bi-wallet2 me-2"></i>Wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-star-half me-2"></i>Payment Info</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-question-octagon me-2"></i>Help &
+                      Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content Area -->
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 pb-4">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true"
+                        >Student Dashboard</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      All Courses
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Course Slider -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <h4 class="mb-3">Continue Learning</h4>
+                <div class="dash-course-slide">
+                  <!-- Slide 1 -->
+                  <div class="singles_items">
+                    <div class="education_block_grid border">
+                      <div class="education-thumb position-relative">
+                        <a href="#"
+                          ><img
+                            class="img-fluid"
+                            src="img/courses-3.jpg"
+                            alt="Course"
+                        /></a>
+                        <div
+                          class="course-hours position-absolute top-0 start-0 ms-3 mt-3"
+                        >
+                          <span class="badge bg-dark rounded-pill">
+                            <i class="bi bi-clock-history me-1"></i>10h 50m
+                          </span>
+                        </div>
+                      </div>
+                      <div class="education-body p-3">
+                        <div class="education-title">
+                          <h4 class="fs-6 fw-medium">
+                            <a href="#"
+                              >UX/UI Design Essentials: Designing User-Centered
+                              Interfaces</a
+                            >
+                          </h4>
+                        </div>
+                        <div class="progress-info mt-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <h6 class="text-mid fw-normal">
+                              12 of 12 lessons complete
+                            </h6>
+                            <h6 class="fw-semibold">100%</h6>
+                          </div>
+                          <div class="progress w-100" style="height: 8px">
+                            <div
+                              class="progress-bar progress-bar-striped bg-success"
+                              style="width: 100%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="education-footer border-0 p-3 pt-2">
+                        <a
+                          class="btn btn-md btn-outline-gray border-2 rounded-pill w-100"
+                          href="#"
+                        >
+                          Course Resume <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="singles_items">
+                    <div class="education_block_grid border">
+                      <div class="education-thumb position-relative">
+                        <a href="#"
+                          ><img
+                            class="img-fluid"
+                            src="img/courses-4.jpg"
+                            alt="Course"
+                        /></a>
+                        <div
+                          class="course-hours position-absolute top-0 start-0 ms-3 mt-3"
+                        >
+                          <span class="badge bg-dark rounded-pill">
+                            <i class="bi bi-clock-history me-1"></i>20h 10m
+                          </span>
+                        </div>
+                      </div>
+                      <div class="education-body p-3">
+                        <div class="education-title">
+                          <h4 class="fs-6 fw-medium">
+                            <a href="#"
+                              >Backend Development with Node.js: Building
+                              Scalable Web Apps</a
+                            >
+                          </h4>
+                        </div>
+                        <div class="progress-info mt-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <h6 class="text-mid fw-normal">
+                              7 of 18 lessons complete
+                            </h6>
+                            <h6 class="fw-semibold">40%</h6>
+                          </div>
+                          <div class="progress w-100" style="height: 8px">
+                            <div
+                              class="progress-bar progress-bar-striped bg-warning"
+                              style="width: 40%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="education-footer border-0 p-3 pt-2">
+                        <a
+                          class="btn btn-md btn-outline-gray border-2 rounded-pill w-100"
+                          href="#"
+                        >
+                          Course Resume <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="singles_items">
+                    <div class="education_block_grid border">
+                      <div class="education-thumb position-relative">
+                        <a href="#"
+                          ><img
+                            class="img-fluid"
+                            src="img/courses-5.jpg"
+                            alt="Course"
+                        /></a>
+                        <div
+                          class="course-hours position-absolute top-0 start-0 ms-3 mt-3"
+                        >
+                          <span class="badge bg-dark rounded-pill">
+                            <i class="bi bi-clock-history me-1"></i>12h 40m
+                          </span>
+                        </div>
+                      </div>
+                      <div class="education-body p-3">
+                        <div class="education-title">
+                          <h4 class="fs-6 fw-medium">
+                            <a href="#"
+                              >Web Development Bootcamp: Learn to Build Modern
+                              Websites</a
+                            >
+                          </h4>
+                        </div>
+                        <div class="progress-info mt-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <h6 class="text-mid fw-normal">
+                              17 of 17 lessons complete
+                            </h6>
+                            <h6 class="fw-semibold">100%</h6>
+                          </div>
+                          <div class="progress w-100" style="height: 8px">
+                            <div
+                              class="progress-bar progress-bar-striped bg-success"
+                              style="width: 100%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="education-footer border-0 p-3 pt-2">
+                        <a
+                          class="btn btn-md btn-outline-gray border-2 rounded-pill w-100"
+                          href="#"
+                        >
+                          Course Resume <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 4 -->
+                  <div class="singles_items">
+                    <div class="education_block_grid border">
+                      <div class="education-thumb position-relative">
+                        <a href="#"
+                          ><img
+                            class="img-fluid"
+                            src="img/courses-6.jpg"
+                            alt="Course"
+                        /></a>
+                        <div
+                          class="course-hours position-absolute top-0 start-0 ms-3 mt-3"
+                        >
+                          <span class="badge bg-dark rounded-pill">
+                            <i class="bi bi-clock-history me-1"></i>17h 15m
+                          </span>
+                        </div>
+                      </div>
+                      <div class="education-body p-3">
+                        <div class="education-title">
+                          <h4 class="fs-6 fw-medium">
+                            <a href="#"
+                              >The Complete AI Guide: Learn ChatGPT, Generative
+                              AI & More</a
+                            >
+                          </h4>
+                        </div>
+                        <div class="progress-info mt-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <h6 class="text-mid fw-normal">
+                              6 of 10 lessons complete
+                            </h6>
+                            <h6 class="fw-semibold">60%</h6>
+                          </div>
+                          <div class="progress w-100" style="height: 8px">
+                            <div
+                              class="progress-bar progress-bar-striped bg-warning"
+                              style="width: 60%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="education-footer border-0 p-3 pt-2">
+                        <a
+                          class="btn btn-md btn-outline-gray border-2 rounded-pill w-100"
+                          href="#"
+                        >
+                          Course Resume <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Browse All Courses -->
+            <div class="row">
+              <div class="col-12">
+                <h4 class="mb-3">Browse All Courses</h4>
+              </div>
+            </div>
+
+            <div class="row g-3" id="row">
+              <!-- Course cards will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

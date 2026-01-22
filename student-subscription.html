@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Tiny Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="about-page">
+    <!-- Header -->
+    <header class="Header" id="Header">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img class="logo-img" src="img/logo.jpg" alt="logo" />
+            <span>Ta3alM</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Accounts</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Instructor Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="instructor.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="create-course.html"
+                          >Create Course</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-courses.html"
+                          >My Courses</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Student Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="student.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-enrollments.html"
+                          >My Enrollments</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="sign-in" id="signIn">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <a href="#">Sign in</a>
+            </div>
+
+            <div class="user" id="user">
+              <div class="user-info">
+                <img
+                  src="img/avatar-1-D6Lye4v7.jpg"
+                  alt="avatar"
+                  class="user-avatar"
+                />
+                <p class="user-name">Ahmed Mohamed</p>
+                <i class="bi bi-caret-down-fill dropdown-icon"></i>
+              </div>
+              <div class="user-dropdown">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-student"></section>
+
+    <!-- Main Content -->
+    <section class="pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-lg-3">
+            <div class="cardUser p-3 pt-4">
+              <div class="card-img m-4">
+                <img src="img/avatar-1-D6Lye4v7.jpg" alt="User Avatar" />
+                <span class="badge">pro</span>
+              </div>
+              <div class="title-img mb-4">
+                <h4 class="m-0">Ahmed Mohamed</h4>
+                <span class="text-mid text-muted-2"
+                  >Platinum - Exp. 15 Dec 2025</span
+                >
+              </div>
+              <div class="count-courses mb-4">
+                <div class="left-count">
+                  <h3 class="mb-3">12</h3>
+                  <p>Done Courses</p>
+                </div>
+                <div class="right-count">
+                  <h3 class="mb-3">165</h3>
+                  <p>Done Lessons</p>
+                </div>
+              </div>
+              <div class="d-navigation">
+                <ul id="side-menu">
+                  <li>
+                    <a href="./student.html"
+                      ><i class="bi bi-ui-radios-grid me-2"></i>Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="active" href="./AllCourses.html"
+                      ><i class="bi bi-play-circle me-2"></i>All Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-subscription.html"
+                      ><i class="bi bi-basket2 me-2"></i>My Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-course-resume.html"
+                      ><i class="bi bi-patch-plus me-2"></i>Course Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-wishlist.html"><i class="bi bi-wallet2 me-2"></i>Wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-star-half me-2"></i>Payment Info</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-question-octagon me-2"></i>Help &
+                      Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content Area -->
+          <div class="col-lg-9">
+            <!-- Course Slider -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 pb-4">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true"
+                        >Student Dashboard</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      My Subscription
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Browse All Courses -->
+
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="card border">
+                  <div
+                    class="card-header d-lg-flex justify-content-between align-items-center flex-wrap gap-1"
+                  >
+                    <div class="mb-3 mb-lg-0">
+                      <h3 class="text-dark mb-0">My Subscriptions</h3>
+                      <p class="mb-0">
+                        Here is list of package/product that you have
+                        subscribed.
+                      </p>
+                    </div>
+                    <div>
+                      <a
+                        class="btn btn-light-red btn-sm rounded-2"
+                        href="/pricing"
+                        data-discover="true"
+                        >Upgrade Now — Go Pro $49</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="border-bottom pt-0 pb-5">
+                      <div class="row mb-4">
+                        <div class="col-lg-6 col-md-8 col-7 mb-2 mb-lg-0">
+                          <span class="d-block">
+                            <span class="h4">Monthly</span>
+                            <span class="badge bg-green ms-2">Active</span>
+                          </span>
+                          <p class="mb-0 fs-6">Subscription ID: #LNR236582</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-5 mb-2 mb-lg-0">
+                          <span>Auto Renewal</span>
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              id="customSwitch1"
+                              type="checkbox"
+                            />
+                            <label class="form-check-label" for="customSwitch1">
+                            </label>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-3 col-md-12 col-12 d-lg-flex align-items-start justify-content-end"
+                        >
+                          <a
+                            class="btn btn-light-main btn-sm"
+                            href="/student-subscription"
+                            data-discover="true"
+                            >Change Plan</a
+                          >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Started On</span>
+                          <h6 class="text-dark mb-0">10 May 2025</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Price</span>
+                          <h6 class="text-dark mb-0">Monthly</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Access</span>
+                          <h6 class="text-dark mb-0">Access All Courses</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Billing Date</span>
+                          <h6 class="text-dark mb-0">
+                            Next Billing on 09 May 2026
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-5">
+                      <div class="row mb-4">
+                        <div class="col mb-2 mb-lg-0">
+                          <span class="d-block">
+                            <span class="h4">Free Plan</span>
+                            <span class="badge bg-red ms-2">Expired</span>
+                          </span>
+                          <p class="mb-0 fs-6">Subscription ID: #LNR2568742</p>
+                        </div>
+                        <div class="col-auto">
+                          <a
+                            class="btn btn-gray btn-sm disabled rounded-2"
+                            href="/student-subscription"
+                            data-discover="true"
+                            >Disabled</a
+                          >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Started On</span>
+                          <h6 class="text-dark mb-0">16 Aug 2024</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Price</span>
+                          <h6 class="text-dark mb-0">Free - Trial a Month</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Access</span>
+                          <h6 class="text-dark mb-0">Access All Courses</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 mb-2 mb-lg-0">
+                          <span class="text-muted fs-6">Billing Date</span>
+                          <h6 class="text-dark mb-0">
+                            Next Billing on A5 Aug 2025
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

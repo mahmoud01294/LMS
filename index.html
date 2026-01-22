@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/online.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <title>Home</title>
+    <meta name="description" content="Learning management system" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="home-page">
+
+
+
+  <header class="Header" id="Header">
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img class="logo-img" src="img/logo.jpg" alt="logo" />
+        <span>Ta3alM</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto">
+
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Accounts
+            </a>
+
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">
+                  Instructor Dashboard
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="instructor.html">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="create-course.html">Create Course</a></li>
+                  <li><a class="dropdown-item" href="my-courses.html">My Courses</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">
+                  Student Dashboard
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="student.html">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="my-enrollments.html">My Enrollments</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sign-in"  id="signIn">
+  <i class="bi bi-box-arrow-in-right"></i>
+  <a href="#">Sign in</a>
+        </div>
+      <div class="user" id="user">
+  <!-- الجزء اللي يظهر دائمًا -->
+  <div class="user-info">
+    <img src="img/avatar-1-D6Lye4v7.jpg" alt="avatar" class="user-avatar">
+    <p class="user-name">Ahmed Mohamed</p>
+    <i class="bi bi-caret-down-fill dropdown-icon"></i>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div class="user-dropdown">
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+</div>
+
+
+        </div>
+        
+
+
+      </div>
+    </div>
+  </nav>
+</header>
+  
+ <section class="login" id="login">
+  <div class="login-cardMain">
+    
+    <!-- زر الإغلاق -->
+         <div class="login-close" >
+      <i class="bi bi-x-lg " id="close"></i>
+    </div>
+    
+    <div class="login-cardBody p-4">
+      <div class="login-card">
+        
+        <div class="web-logo d-flex align-items-center justify-content-center mb-3">
+          <div class="logo">
+            <img class="img-fluid" width="60" alt="Logo" src="img/logo-icon-Buqcv8R0.png">
+          </div>
+        </div>
+        
+        <div class="login-caps mb-3">
+          <div class="text-center">
+            <h3 class="fw-semibold m-0">Welcome back</h3>
+            <span>Please enter your details to sign in carefully.</span>
+          </div>
+        </div>
+        
+        <div class="social-login-wrap mb-4">
+          <div class="d-flex align-items-center justify-content-between gap-4">
+            <a class="btn btn-outline-gray rounded-3 flex-fill" href="#" onclick="return false;">
+              <i class="bi bi-apple"></i>
+            </a>
+            <a class="btn btn-outline-gray rounded-3 flex-fill" href="#" onclick="return false;">
+              <i class="bi bi-google text-red"></i>
+            </a>
+            <a class="btn btn-outline-gray rounded-3 flex-fill" href="#" onclick="return false;">
+              <i class="bi bi-twitter text-info"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="deider-wrap w-100 mt-3 mb-5">
+          <div class="d-block border-top position-relative">
+            <span class="position-absolute top-50 start-50 translate-middle square--40 circle bg-white text-muted z-1">OR</span>
+          </div>
+        </div>
+        
+        <div class="login-form">
+          <form>
+            <div class="form-group mb-4">
+              <input class="form-control" placeholder="Enter your email.." type="email">
+            </div>
+            
+            <div class="form-group mb-4">
+              <div class="position-relative">
+                <input class="form-control" placeholder="********" type="password" id="passwordField">
+                <span class="position-absolute top-50 end-0 translate-middle-y me-3">
+                  <i class="bi bi-eye text-muted" id="togglePassword"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="form-group mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="form-check">
+                  <input id="saveinfo" class="form-check-input" type="checkbox" name="saveinfo">
+                  <label for="saveinfo" class="form-check-label">Remember me</label>
+                </div>
+                <div class="forget-password">
+                  <a class="text-decoration-underline" href="#" onclick="return false;">Forgot Password?</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group mb-3">
+              <button type="submit" class="btn btn-main w-100">Sign In</button>
+            </div>
+            
+            <div class="form-group">
+              <div class="text-center text-muted">
+                Don't have an account yet? 
+                <a class="fw-semibold signup-link" href="#" onclick="return false;">Sign Up</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="Hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="Section-caption">
+              <div class="review-caption">
+                <div class="d-flex align-items-center gap-4 fs-5 lh-0 mb-4">
+                  <div class="text-light fw-semibold">4.9</div>
+                  <div class="review_star">
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                  </div>
+                </div>
+                <span class="rev_span">Engaged Student</span>
+              </div>
+
+              <h1>Your Learning Journey Starts Here</h1>
+            </div>
+            <div class="search">
+              <button class="btn1" id="searchBtn">
+                <i
+                  data-feather="search"
+                  style="stroke: gray; width: 30px; height: 30px"
+                ></i>
+              </button>
+              <input
+                class="form-control"
+                type="text"
+                name="search-input"
+                id="search-input"
+                placeholder="Search for courses, skills, and videos"
+              />
+
+              <button type="button" class="btn1 me-2" id="send-btn">
+                <i
+                  data-feather="send"
+                  style="stroke: gold; width: 30px; height: 30px"
+                ></i>
+              </button>
+            </div>
+            <div class="d-block mt2">
+              <div
+                class="d-flex align-items-center justify-content-start gap-3"
+              >
+                <div class="Enroll">
+                  <a
+                    class="btn"
+                    href="courses.html"
+                    role="button"
+                  >
+                    Enrolled Today Now
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="hero-image">
+              <img class="" src="img/hero-img.png" alt="hero-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourCourses">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="section-heading">
+              <h2>Explore Our Courses</h2>
+              <p>
+                Learn from Industry Experts and Advance Your Career with
+                Practical Skills
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-12 col-12">
+            <ul
+              class="nav nav-tabs simple smalls scroll-tab align-items-center justify-content-center border-0 mb-4"
+              id="courseTab"
+              role="tablist"
+            >
+              <li class="nav-item ms-0" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="pills-development-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-development"
+                  aria-selected="true"
+                  href="#pills-development"
+                  data-discover="true"
+                >
+                  Development
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-design-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-design"
+                  aria-selected="false"
+                  href="#pills-design"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Design
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-marketing-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-marketing"
+                  aria-selected="false"
+                  href="#pills-marketing"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Marketing
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-business-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-business"
+                  aria-selected="false"
+                  href="#pills-business"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Business
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-accounting-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-accounting"
+                  aria-selected="false"
+                  href="#pills-accounting"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Accounting
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-12">
+            <div class="tab-content" id="courseTabContent">
+              <div
+                class="tab-pane fade active show"
+                id="pills-development"
+                role="tabpanel"
+                aria-labelledby="pills-development-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card_img">
+                        <img src="img/courses-1.jpg" alt="img1" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              155
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (1.57k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-2.jpg" alt="img2" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-3.jpg" alt="img3" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Python Unleashed: Mastering JavaScript for Web
+                              Development
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              45 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              179
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-4.jpg" alt="img4" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-design"
+                role="tabpanel"
+                aria-labelledby="pills-design-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-4.jpg" alt="img4" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.8 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-1.jpg" alt="img1" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.8 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+
+                              155
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (3.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-marketing"
+                role="tabpanel"
+                aria-labelledby="pills-marketing-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5 " />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              155
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (3.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-7.jpg" alt="img7" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              39 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card_img">
+                        <img class="img" src="img/courses-8.jpg" alt="img8" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (4.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-business"
+                role="tabpanel"
+                aria-labelledby="pills-business-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-7.jpg" alt="img7" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              39 Lectures
+                            </li>
+
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-8.jpg" alt="img8" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.9 (4.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-9.jpg" alt="img9" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              The Complete AI Guide: Learn ChatGPT, Generative
+                              AI & More..
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              28 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              120
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.7 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-accounting"
+                role="tabpanel"
+                aria-labelledby="pills-accounting-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-9.jpg" alt="img9" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              The Complete AI Guide: Learn ChatGPT, Generative
+                              AI & More..
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              28 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              120
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.7 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                class="fa-solid fa-camera"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-chart-bar"
+                                style="font-size: 18px; color: #555"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-dollar-sign"
+                                style="font-size: 18px; color: green"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: gold; font-size: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              class="fa-solid fa-arrow-right"
+                              style="font-size: 18px; color: gold"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Discover">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="section-heading">
+              <h2>Discover Categories</h2>
+              <p>
+                Browse a Wide Range of Subjects to Start Learning What You Love
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-code"
+                  style="color: #0d6efd; font-size: 35px"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>Web Development</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">12</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-paintbrush"
+                  style="font-size: 35px; color: #ff6f00"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>UI/UX Design</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">45</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-code"
+                  style="color: #0d6efd; font-size: 35px"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>Web Development</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">24</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i class="fa-solid fa-volume-high fs-3 text-primary"></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>Digital Marketing</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">12</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-briefcase"
+                  style="font-size: 35px; color: brown"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>Entrepreneurship</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">87</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-sack-dollar"
+                  style="font-size: 35px; color: gold"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>Personal Finance</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">35</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-laptop"
+                  style="font-size: 35px; color: gray"
+                ></i>
+              </div>
+              <div class="ms-3 mt-3">
+                <h4>IT & Software</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">33</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="icon mt-3 ms-3">
+                <i
+                  class="fa-solid fa-truck-medical"
+                  style="font-size: 35px"
+                ></i>
+              </div>
+              <div class="ms-3 mt-4">
+                <h4>Health & Fitness</h4>
+                <span class="text-muted-2"
+                  ><span class="fw-semibold me-1">37</span>Courses</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-4 gx-lg-5">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-2">
+            <div class="benefitoflearning">
+              <div class="mb-4 d-block">
+                <h2 class="h2 mb-5">Why Ta3alM <br />Learning Platform?</h2>
+                <p class="p1 text-muted">
+                  We’re developing an innovative Bootstrap-powered UI Kit tool
+                  designed specifically for developers, engineers, full-stack
+                  developers, and digital agencies.
+                </p>
+                <p class="p1 text-muted">
+                  You made all the required mock ups for commissioned layout,
+                  got all the approvals, built a tested code base or had them
+                  built, you decided on a content management system, got a
+                  license for it or adapted open source software for your
+                  client's needs.
+                </p>
+              </div>
+              <div class="benifit_warps mb-4">
+                <ul class="p-0 m-0 row g-4">
+                  <li class="col-sm-6 fs-5">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="icon">
+                        <i
+                          data-feather="check"
+                          style="stroke: green; width: 30px; height: 30px"
+                        ></i>
+                      </span>
+                      <span class="sp">Wide Range of Courses</span>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 fs-5">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="icon">
+                        <i
+                          data-feather="check"
+                          style="stroke: green; width: 30px; height: 30px"
+                        ></i>
+                      </span>
+                      <span class="sp">Cost-Effective</span>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 fs-5">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="icon">
+                        <i
+                          data-feather="check"
+                          style="stroke: green; width: 30px; height: 30px"
+                        ></i>
+                      </span>
+                      <span class="sp"> Global Networking</span>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 fs-5">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="icon">
+                        <i
+                          data-feather="check"
+                          style="stroke: green; width: 30px; height: 30px"
+                        ></i>
+                      </span>
+                      <span class="sp">Get Certificate</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="btn"
+                role="button"
+                id="btn-account"
+                href="index.html"
+                data-discover="true"
+                >Create Account</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+            <div class="facts-img">
+              <img src="img/custom-img-5.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="section-heading">
+              <h2>Insights & Updates</h2>
+              <p>
+                Stay Informed with the Latest News, Tips, and Trends in Online
+                Learning
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 shadow-sm card-lift">
+              <a href="#" data-discover="true"
+                ><img src="img/blog-1.jpg" alt="blog1"
+              /></a>
+              <div class="card-body">
+                <div class="d-flex mb-2">
+                  <a
+                    class="badge rounded-pill text-bg-success p-2"
+                    href="index.html"
+                    data-discover="true"
+                    >Tutorial</a
+                  >
+                </div>
+
+                <h4>
+                  <a href="#" class="text-inherit"
+                    >Top 10 Online Courses to Boost Your Career in 2025</a
+                  >
+                </h4>
+                <p class="mt-3">
+                  Our mission is to develop the most advanced Bootstrap-based UI
+                  Kit for...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 shadow-sm card-lift">
+              <a href="#" data-discover="true"
+                ><img src="img/blog-2.jpg" alt="blog-2"
+              /></a>
+              <div class="card-body">
+                <div class="d-flex mb-2">
+                  <a
+                    class="badge rounded-pill text-bg-success p-2"
+                    href="index.html"
+                    data-discover="true"
+                    >Tutorial</a
+                  >
+                </div>
+
+                <h4>
+                  <a href="#" class="text-inherit"
+                    >How to Stay Motivated While Learning from Home</a
+                  >
+                </h4>
+                <p class="mt-3">
+                  Our mission is to develop the most advanced Bootstrap-based UI
+                  Kit for...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 shadow-sm card-lift">
+              <a href="#" data-discover="true"
+                ><img src="img/blog-3.jpg" alt="blog-3"
+              /></a>
+              <div class="card-body">
+                <div class="d-flex mb-2">
+                  <a
+                    class="badge rounded-pill text-bg-success p-2"
+                    href="index.html"
+                    data-discover="true"
+                    >Tutorial</a
+                  >
+                </div>
+
+                <h4>
+                  <a href="#" class="text-inherit"
+                    >The Best Platforms for Learning Programming Online</a
+                  >
+                </h4>
+                <p class="mt-3">
+                  Our mission is to develop the most advanced Bootstrap-based UI
+                  Kit for...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg -3 col-md-3">
+            <div class="footer-widget mt-4">
+              <img class="imgfooter" src="img/logo.jpg" alt="footer-img" />
+              <span class="s1">Ta3alM</span>
+              <div class="footer-add">
+                <address class="mt-4 mb-4 lh-base text-light">
+                  4967 Sardis Sta, Victoria 8007, Montreal
+                  <br />
+                  United States
+                </address>
+                <div class="call-now d-flex align-items-center gap-3 mb-3">
+                  <div class="icon-box">
+                    <i
+                      data-feather="phone"
+                      style="color: white; width: 24px; height: 24px"
+                    ></i>
+                  </div>
+                  <div class="fs-6 fw-semibold text-light">+1 246-345-0695</div>
+                </div>
+                <div class="call-now d-flex align-items-center gap-3 mb-3">
+                  <div class="icon-box">
+                    <i
+                      data-feather="mail"
+                      style="color: white; width: 24px; height: 24px"
+                    ></i>
+                  </div>
+                  <div class="fs-6 fw-semibold text-light">
+                    support@ta3alm.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5">
+            <div class="footer-widget">
+              <h4 class="widget-title">Navigations</h4>
+              <ul class="footer-menu">
+                <li><a href="index.html" data-discover="true">Home</a></li>
+                <li><a href="about.html" data-discover="true">About Us</a></li>
+                <li><a href="contact.html" data-discover="true">Contact</a></li>
+                <li><a href="courses.html" data-discover="true">Courses</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5">
+            <div class="footer-widget">
+              <h4 class="widget-title">New Categories</h4>
+              <ul class="footer-menu">
+                <li><a href="index.html" data-discover="true">Designing</a></li>
+                <li><a href="index.html" data-discover="true">Business</a></li>
+                <li><a href="index.html" data-discover="true">Software</a></li>
+                <li>
+                  <a href="index.html" data-discover="true">Word-press</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5">
+            <div class="footer-widget">
+              <h4 class="widget-title">Help & Support</h4>
+              <ul class="footer-menu">
+                <li>
+                  <a href="index.html" data-discover="true">Documentation</a>
+                </li>
+                <li><a href="index.html" data-discover="true">Live Chat</a></li>
+                <li><a href="index.html" data-discover="true">Mail Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-widget mt-5">
+              <h4 class="widget-title">Download Apps</h4>
+              <a
+                href="index.html"
+                class="other-store-link"
+                data-discover="true"
+              >
+                <div class="other-store-app">
+                  <div class="os-app-icon">
+                    <img
+                      src="img/googlepaly1.png"
+                      alt="Google Play"
+                      style="width: 35px; height: 35px"
+                    />
+                  </div>
+                  <div class="os-app-caps">
+                    Google Play
+                    <span>Get it Now </span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="index.html"
+                class="other-store-link"
+                data-discover="true"
+              >
+                <div class="other-store-app">
+                  <div class="os-app-icon">
+                    <img
+                      src="img/apple.png"
+                      alt="apple store"
+                      style="width: 35px; height: 35px"
+                    />
+                  </div>
+                  <div class="os-app-caps">
+                    App Store
+                    <span>Now it Avaliable </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-6 col-md-6">
+              <p class="mb-0">
+                © 2025 Ta3alm. Designd & Develop with Us And<i
+                  class="fa-solid fa-heart"
+                  style="color: red; font-size: 14px"
+                ></i
+                ><a
+                  href="https://themeforest.net/item/learnup-php-online-courses-education-lms-template/60706061"
+                  >ThemeForest</a
+                >
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 text-md-end">
+              <ul class="footer-bottom-social">
+                <li>
+                  <a href="index.html" data-discover="true"
+                    ><i
+                      class="fa-brands fa-facebook-f"
+                      style="color: white; font: size 15px"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html" data-discover="true"
+                    ><i
+                      class="fa-brands fa-x-twitter"
+                      style="color: white; font-size: 15px"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html" data-discover="true"
+                    ><i
+                      class="fa-brands fa-instagram"
+                      style="color: white; font-size: 15px"
+                    ></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="index.html" data-discover="true"
+                    ><i
+                      class="fa-brands fa-whatsapp"
+                      style="color: white; font-size: 15px"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn btn-up hide btn-info" id="backToTop">
+      <i class="fa-solid fa-arrow-up" style="font-size: 20px; width: 10px"></i>
+    </button>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

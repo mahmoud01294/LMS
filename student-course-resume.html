@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Tiny Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="about-page">
+    <!-- Header -->
+    <header class="Header" id="Header">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img class="logo-img" src="img/logo.jpg" alt="logo" />
+            <span>Ta3alM</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Accounts</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Instructor Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="instructor.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="create-course.html"
+                          >Create Course</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-courses.html"
+                          >My Courses</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Student Dashboard</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="student.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-enrollments.html"
+                          >My Enrollments</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="sign-in" id="signIn">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <a href="#">Sign in</a>
+            </div>
+
+            <div class="user" id="user">
+              <div class="user-info">
+                <img
+                  src="img/avatar-1-D6Lye4v7.jpg"
+                  alt="avatar"
+                  class="user-avatar"
+                />
+                <p class="user-name">Ahmed Mohamed</p>
+                <i class="bi bi-caret-down-fill dropdown-icon"></i>
+              </div>
+              <div class="user-dropdown">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-student"></section>
+
+    <!-- Main Content -->
+    <section class="pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-lg-3">
+            <div class="cardUser p-3 pt-4">
+              <div class="card-img m-4">
+                <img src="img/avatar-1-D6Lye4v7.jpg" alt="User Avatar" />
+                <span class="badge">pro</span>
+              </div>
+              <div class="title-img mb-4">
+                <h4 class="m-0">Ahmed Mohamed</h4>
+                <span class="text-mid text-muted-2"
+                  >Platinum - Exp. 15 Dec 2025</span
+                >
+              </div>
+              <div class="count-courses mb-4">
+                <div class="left-count">
+                  <h3 class="mb-3">12</h3>
+                  <p>Done Courses</p>
+                </div>
+                <div class="right-count">
+                  <h3 class="mb-3">165</h3>
+                  <p>Done Lessons</p>
+                </div>
+              </div>
+              <div class="d-navigation">
+                <ul id="side-menu">
+                  <li>
+                    <a href="./student.html"
+                      ><i class="bi bi-ui-radios-grid me-2"></i>Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="active" href="AllCourses.html"
+                      ><i class="bi bi-play-circle me-2"></i>All Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="student-subscription.html"
+                      ><i class="bi bi-basket2 me-2"></i>My Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a href="student-course-resume.html"
+                      ><i class="bi bi-patch-plus me-2"></i>Course Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./student-wishlist.html"><i class="bi bi-wallet2 me-2"></i>Wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-star-half me-2"></i>Payment Info</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-question-octagon me-2"></i>Help &
+                      Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content Area -->
+          <div class="col-lg-9">
+            <!-- Course Slider -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 pb-4">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="/student-dashboard" data-discover="true"
+                        >Student Dashboard</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Course Resume
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Browse All Courses -->
+
+            <div class="row mb-4">
+              <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="d-flex flex-column gap-3">
+                  <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                      <a
+                        class="accordion-header h3 d-flex flex-row justify-content-between align-items-center collapsible-link position-relative py-3 px-4 collapsed"
+                        data-bs-toggle="collapse"
+                        href="#collapseOne"
+                        role="button"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <div class="fw-semibold fs-5">
+                          Laravel Lessons (Web Design Focus)
+                        </div>
+                      </a>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div
+                          class="accordion-body border-top d-flex flex-column gap-3"
+                        >
+                          <div
+                            class="accordion-html border rounded-2 py-3 ps-3"
+                          >
+                            <a
+                              class="fs-6 fw-normal collapsible-link position-relative collapsed"
+                              data-bs-toggle="collapse"
+                              href="#subtitleOne"
+                              role="button"
+                              aria-expanded="true"
+                              aria-controls="subtitleOne"
+                            >
+                              <div
+                                class="d-flex flex-row gap-3 align-items-center"
+                              >
+                                <span>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM5.74701 16C5.74701 21.6626 10.3374 26.253 16 26.253C21.6626 26.253 26.253 21.6626 26.253 16C26.253 10.3374 21.6626 5.74701 16 5.74701C10.3374 5.74701 5.74701 10.3374 5.74701 16Z"
+                                      fill="#E2E8F0"
+                                    ></path>
+                                    <path
+                                      d="M32 16C32 19.1645 31.0616 22.2579 29.3035 24.8891C27.5454 27.5203 25.0466 29.5711 22.1229 30.7821C19.1993 31.9931 15.9823 32.3099 12.8786 31.6926C9.77486 31.0752 6.92393 29.5513 4.68629 27.3137C2.44865 25.0761 0.924799 22.2251 0.307435 19.1214C-0.309928 16.0177 0.00692538 12.8007 1.21793 9.87706C2.42893 6.95345 4.47969 4.45459 7.11088 2.69649C9.74206 0.938384 12.8355 -3.77363e-08 16 0V5.74701C13.9721 5.74701 11.9898 6.34833 10.3037 7.47495C8.61765 8.60156 7.30349 10.2029 6.52747 12.0763C5.75144 13.9498 5.5484 16.0114 5.94401 18.0003C6.33963 19.9891 7.31613 21.8161 8.75004 23.25C10.1839 24.6839 12.0109 25.6604 13.9997 26.056C15.9886 26.4516 18.0502 26.2486 19.9237 25.4725C21.7971 24.6965 23.3984 23.3824 24.5251 21.6963C25.6517 20.0102 26.253 18.0279 26.253 16H32Z"
+                                      fill="#38A169"
+                                    ></path></svg></span
+                                >Blade Templates
+                              </div>
+                            </a>
+                            <div
+                              id="subtitleOne"
+                              class="accordion-collapse collapse show"
+                            >
+                              <div class="accordion-body mt-2 px-2 pb-0">
+                                <ul class="d-flex flex-column gap-3 mb-0 px-0">
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                      >
+                                        <i class="bi bi-play-fill fs-5"></i>
+                                      </a>
+                                      <span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Intro to Blade</span
+                                      >
+                                      <a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >10:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                      >
+                                        <i class="bi bi-play-fill fs-5">
+                                        </i> </a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Create layout file</span
+                                      >
+                                      <a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:10</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                      >
+                                        <i class="bi bi-play-fill fs-5"> </i>
+                                      </a>
+                                      <span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Add header and footer</span
+                                      ><a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >08:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-light-red"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Use @section and @yield</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:35</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="accordion-html border rounded-2 py-3 ps-3"
+                          >
+                            <a
+                              class="fs-6 fw-normal collapsible-link position-relative collapsed"
+                              data-bs-toggle="collapse"
+                              href="#subtitleTwo"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="subtitleTwo"
+                            >
+                              <div
+                                class="d-flex flex-row gap-3 align-items-center"
+                              >
+                                <span
+                                  ><svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM5.74701 16C5.74701 21.6626 10.3374 26.253 16 26.253C21.6626 26.253 26.253 21.6626 26.253 16C26.253 10.3374 21.6626 5.74701 16 5.74701C10.3374 5.74701 5.74701 10.3374 5.74701 16Z"
+                                      fill="#E2E8F0"
+                                    ></path>
+                                    <path
+                                      d="M32 16C32 19.1645 31.0616 22.2579 29.3035 24.8891C27.5454 27.5203 25.0466 29.5711 22.1229 30.7821C19.1993 31.9931 15.9823 32.3099 12.8786 31.6926C9.77486 31.0752 6.92393 29.5513 4.68629 27.3137C2.44865 25.0761 0.924799 22.2251 0.307435 19.1214C-0.309928 16.0177 0.00692538 12.8007 1.21793 9.87706C2.42893 6.95345 4.47969 4.45459 7.11088 2.69649C9.74206 0.938384 12.8355 -3.77363e-08 16 0V5.74701C13.9721 5.74701 11.9898 6.34833 10.3037 7.47495C8.61765 8.60156 7.30349 10.2029 6.52747 12.0763C5.75144 13.9498 5.5484 16.0114 5.94401 18.0003C6.33963 19.9891 7.31613 21.8161 8.75004 23.25C10.1839 24.6839 12.0109 25.6604 13.9997 26.056C15.9886 26.4516 18.0502 26.2486 19.9237 25.4725C21.7971 24.6965 23.3984 23.3824 24.5251 21.6963C25.6517 20.0102 26.253 18.0279 26.253 16H32Z"
+                                      fill="#38A169"
+                                    ></path></svg></span
+                                >Design with Bootstrap
+                              </div></a
+                            >
+                            <div
+                              id="subtitleTwo"
+                              class="accordion-collapse collapse"
+                            >
+                              <div class="accordion-body mt-2 px-2 pb-0">
+                                <ul class="d-flex flex-column gap-3 mb-0 px-0">
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Intro to Blade</span
+                                      ><a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >10:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Create layout file</span
+                                      ><a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:10</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-green"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Add header and footer</span
+                                      ><a
+                                        href="#"
+                                        class="badge bg-dark text-white"
+                                        >Play again</a
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >08:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="square--30 circle btn-light-red"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Use @section and @yield</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:35</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="accordion-html border rounded-2 py-3 ps-3"
+                          >
+                            <a
+                              class="fs-6 fw-normal collapsible-link position-relative collapsed"
+                              data-bs-toggle="collapse"
+                              href="#subtitleThree"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="subtitleThree"
+                              ><div
+                                class="d-flex flex-row gap-3 align-items-center"
+                              >
+                                <span
+                                  ><svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM5.74701 16C5.74701 21.6626 10.3374 26.253 16 26.253C21.6626 26.253 26.253 21.6626 26.253 16C26.253 10.3374 21.6626 5.74701 16 5.74701C10.3374 5.74701 5.74701 10.3374 5.74701 16Z"
+                                      fill="#E2E8F0"
+                                    ></path></svg></span
+                                >JSP Page Design
+                              </div></a
+                            >
+                            <div
+                              id="subtitleThree"
+                              class="accordion-collapse collapse"
+                            >
+                              <div class="accordion-body mt-2 px-2 pb-0">
+                                <ul class="d-flex flex-column gap-3 mb-0 px-0">
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Intro to Blade</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >10:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Create layout file</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:10</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Add header and footer</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >08:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Use @section and @yield</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:35</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="accordion-html border rounded-2 py-3 ps-3"
+                          >
+                            <a
+                              class="fs-6 fw-normal collapsible-link position-relative collapsed"
+                              data-bs-toggle="collapse"
+                              href="#subtitleFour"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="subtitleFour"
+                              ><div
+                                class="d-flex flex-row gap-3 align-items-center"
+                              >
+                                <span
+                                  ><svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM5.74701 16C5.74701 21.6626 10.3374 26.253 16 26.253C21.6626 26.253 26.253 21.6626 26.253 16C26.253 10.3374 21.6626 5.74701 16 5.74701C10.3374 5.74701 5.74701 10.3374 5.74701 16Z"
+                                      fill="#E2E8F0"
+                                    ></path></svg></span
+                                >Styling with Bootstrap
+                              </div></a
+                            >
+                            <div
+                              id="subtitleFour"
+                              class="accordion-collapse collapse"
+                            >
+                              <div class="accordion-body mt-2 px-2 pb-0">
+                                <ul class="d-flex flex-column gap-3 mb-0 px-0">
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Intro to Blade</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >10:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Create layout file</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:10</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Add header and footer</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >08:20</span
+                                    >
+                                  </li>
+                                  <li
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center flex-row gap-2"
+                                    >
+                                      <a
+                                        class="square--30 circle btn-light-red"
+                                        href="/student-course-resume"
+                                        data-discover="true"
+                                        ><i class="bi bi-play-fill fs-5"></i></a
+                                      ><span
+                                        class="d-inline-block text-truncate w-shrunk"
+                                        >Use @section and @yield</span
+                                      >
+                                    </div>
+                                    <span class="text-mid text-muted"
+                                      >05:35</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
